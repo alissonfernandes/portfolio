@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Estante de Livros</title>
+</head>
+<body>
+
+	<style>
+		:root { --bg-color:#fff ; --title: #0A85AB; --paragrafo: #064C61}
+		
+		body {background-color: var(--bg-color);}
+		h1, h2 {color: var(--title);font-size: 30pt; font-family: "CALIBRE", sans-serif;}
+		h3 {text-decoration: underline; color: var(--title); font-size: 20pt; font-family: "CANDARA", sans-serif;}
+		h4 {color: var(--paragrafo); font-size: 15pt;}
+		ol { color: var(--title); font-family: "CALIBRE", sans-serif; font-size: 14pt;}
+		section {margin:7%  10%; /*background-color: ivory; box-shadow: 0 0 10px ivory;*/}
+		section img {width: 15%; float: left; margin-right: 5%;}
+		section p {/*color: #CD853F;*/ color: var(--paragrafo); font-family: "CANDARA", sans-serif; font-size: 12pt;}
+		section p a { text-decoration: underline; color: var(--title);}
+		table {
+			border-collapse: collapse;
+			width: 40%;
+		}
+		table, th, td {
+			border: 1px solid var(--title);
+		}
+		table th, td {
+			text-align: left;
+			padding: 1%;
+		}
+		table th {color: var(--title);}
+		table td {color: var(--paragrafo);}
+	</style>
+
+	<div style="text-align: center;">
+		<h1>Estante de livros</h1>
+		<h4>Sua biblioteca à um clique de distância</h4>
+	</div>
+
+	<div style="display: inline-block; display: flex; flex-direction: column; align-items: center;">
+		<h2 style="text-align: center;">Sumário:</h2>
+		<ol>
+			<li>Harry Potter e a Pedra Filosofal		</li>
+			<li>O senhor dos Anéis: A sociedade do Anél	</li>
+			<li>Percy Jackson e o Ladrão de Raios		</li>
+			<li>Alice no país das Maravilhas			</li>
+			<li>O guia do Mochileiro das Galáxias		</li>
+		</ol>
+	</div>
+
+	<section>
+		<h3>Harry Potter e a Pedra Filosofal</h3>
+		<img src="img/harry_potter.jpg">
+		<h3>Sinopse</h3>
+		<p class="p-sinopse">
+			Harry Potter nunca tinha ouvido falar em Hogwarts até o momento em que as CARTAS começam a aparecer no capacho do número 4 da rua dos Alfeneiros. Endereçadas com um LACRE PÚRPURA, elas são repidamente confiscadas por seus tios TERRÍVEIS. E então, no décimo primeiro aniversário de Harry, um homem GIGANTESCO com olhos luzindo como besouros negros chamado RÚBEO HAGRID entra intempestivamente com uma notícia ASSOMBROSA: Harry Potter é um bruxo e tem uma vaga na ESCOLA DE MAGIA E BRUXARIA DE HOGWARTS. Uma aventura inacreditável está para começar!
+		</p>
+		<p>
+			Fonte: <a href="https://www.google.com.br/books/edition/Harry_Potter_e_a_pedra_filosofal/obrNzgEACAAJ?hl=pt-BR" target="_black">Google Books</a>
+		</p>
+		<table>
+			<tr>
+				<th>Data da primeira publicação</th>
+				<th>Autor</th>
+				<th>Idioma Original</th>
+				<th>Gêneros</th>
+			</tr>
+			<tr>
+				<td>26 de junho de 1997</td>
+				<td>J.K. Rowling</td>
+				<td>Inglês</td>
+				<td>Romance, Literatura infantil, Literatura fantástica, Alta fantasia</td>
+			</tr>
+		</table>
+	</section>
+
+	<section>
+		<h3>O senhor dos Anéis: A sociedade do Anél</h3>
+		<img src="img/senhor_dos_aneis.jpg">
+		<h3>Sinopse</h3>
+		<p class="p-sinopse">
+			A Sociedade do Anel O volume inicial de O Senhor dos Anéis, lançado originalmente em julho de 1954, foi o primeiro grande épico de fantasia moderno, conquistando milhões de leitores e se tornando o padrão de referência para todas as outras obras do gênero até hoje. A imaginação prodigiosa de J.R.R. Tolkien e seu conhecimento profundo das antigas mitologias da Europa permitiram que ele criasse um universo tão complexo e convincente quanto o mundo real. A Sociedade do Anel começa no Condado, a região rural do oeste da Terra-média onde vivem os diminutos e pacatos hobbits. Bilbo Bolseiro, um dos raros aventureiros desse povo, cujas peripécias foram contadas em O Hobbit, resolve ir embora do Condado e deixa sua considerável herança nas mãos de seu jovem parente Frodo. O mais importante legado de Bilbo é o anel mágico que costumava usar para se tornar invisível. No entanto, o mago Gandalf, companheiro de aventuras do velho hobbit, revela a Frodo que o objeto é o Um Anel, a raiz do poder demoníaco de Sauron, o Senhor Sombrio, que deseja escravizar todos os povos da Terra-média. A única maneira de eliminar a ameaça de Sauron é destruir o Um Anel nas entranhas da própria montanha de fogo onde foi forjado. A revelação faz com que Frodo e seus companheiros hobbits Sam, Merry e Pippin deixem a segurança do Condado e iniciem uma perigosa jornada rumo ao leste. Ao lado de representantes dos outros Povos Livres que resistem ao Senhor Sombrio, eles formam a Sociedade do Anel. Alguém uma vez disse que o mundo dos leitores de língua inglesa se divide entre os que já leram O Senhor dos Anéis e os que um dia lerão o livro. Com esta nova tradução da obra, o fascínio dessa aventura atemporal ficará ainda mais evidente para os leitores brasileiros, tanto os que já conhecem a saga como os que estão prestes a descobrir seu encanto.
+		</p>
+		<p>
+			Fonte: <a href="https://www.google.com.br/books/edition/O_Senhor_dos_An%C3%A9is_A_Sociedade_do_Anel/R7KuDwAAQBAJ?hl=pt-BR&gbpv=0" target="_black">Google Books</a>
+		</p>
+		<table>
+			<tr>
+				<th>Data da primeira publicação</th>
+				<th>Autor</th>
+				<th>Idioma Original</th>
+				<th>Gêneros</th>
+			</tr>
+			<tr>
+				<td>28 de julho de 1954</td>
+				<td>J.R.R. Tolkien</td>
+				<td>Inglês</td>
+				<td>Literatura fantástica</td>
+			</tr>
+		</table>
+	</section>
+
+	<section>
+		<h3>Percy Jackson e o Ladrão de Raios</h3>
+		<img src="img/percy_jackson.jpg">
+		<h3>Sinopse</h3>
+		<p class="p-sinopse">
+			Primeiro volume da saga Percy Jackson e os olimpianos, O ladrão de raios esteve entre os primeiros lugares na lista das séries mais vendidas do The New York Times. O autor conjuga lendas da mitologia grega com aventuras no século XXI. Nelas, os deuses do Olimpo continuam vivos, ainda se apaixonam por mortais e geram filhos metade deuses, metade humanos, como os heróis da Grécia antiga. Marcados pelo destino, eles dificilmente passam da adolescência. Poucos conseguem descobrir sua identidade. O garoto-problema Percy Jackson é um deles. Tem experiências estranhas em que deuses e monstros mitológicos parecem saltar das páginas dos livros direto para a sua vida. Pior que isso: algumas dessas criaturas estão bastante irritadas. Um artefato precioso foi roubado do Monte Olimpo e Percy é o principal suspeito. Para restaurar a paz, ele e seus amigos – jovens heróis modernos – terão de fazer mais do que capturar o verdadeiro ladrão: precisam elucidar uma traição mais ameaçadora que fúria dos deuses.
+		</p>
+		<p>
+			Fonte: <a href="https://www.google.com.br/books/edition/O_Ladr%C3%A3o_de_raios/DNeCPgAACAAJ?hl=pt-BR" target="_black">Google Books</a>
+		</p>
+		<table>
+			<tr>
+				<th>Data da primeira publicação</th>
+				<th>Autor</th>
+				<th>Idioma Original</th>
+				<th>Gêneros</th>
+			</tr>
+			<tr>
+				<td>28 julho de 2005</td>
+				<td>Rick Riordan</td>
+				<td>Inglês</td>
+				<td>Mitologia grega, Romance, Ficção juvenil</td>
+			</tr>
+		</table>
+	</section>
+
+	<section>
+		<h3>Alice no país das Maravilhas</h3>
+		<img src="img/alice.jpg">
+		<h3>Sinopse</h3>
+		<p>
+			Você poderia me dizer, por favor, qual caminho eu devo seguir a partir daqui?'
+			Que esta pergunta seja feita por uma garotinha perdida de casa (após ter seguido um coelho falante até sua toca) a uma espécie de gato fantasmagórico flutuante já não causa nenhuma estranheza quando chegamos na tal parte da história, pois como nos alertou a própria menina: 'há tanta coisa estranha acontecendo aqui que eu já não me surpreendo com mais nada'.
+			Com este conto surreal e fantástico, muitas vezes sem sentido algum, noutras vezes carregado de sentido oculto e profundo, Lewis Carroll revolucionou para sempre a literatura infantil, praticamente a refundando (não surpreende que encontremos algo do seu estilo em Antoine de Saint-Exupéry e Monteiro Lobato). É aqui que conheceremos célebres personagens como o Coelho Branco, o Chapeleiro Louco e o Gato de Cheshire. É aqui que veremos, quem sabe, a primeira descrição genuína dos sonhos infantis. É aqui que celebraremos toda a magia da boa literatura - esta que não morre nunca.
+			Incontáveis peças de teatro, filmes e livros secundários foram criados por conta desta obra preciosa, mas nada substituí ler o original; ainda mais quando se trata da tradução de um de nossos maiores escritores, Monteiro Lobato, numa edição recheada com as clássicas ilustrações de John Tenniel e Arthur Rackham. Bem-vindo ao País das Maravilhas!</p>
+		<p>
+			Fonte: <a href="https://www.google.com.br/books/edition/_/zsngDwAAQBAJ?hl=pt-BR&sa=X&ved=2ahUKEwiduYrlhfb3AhXILbkGHQPlD4AQre8FegQIFxAJ" target="_black">Google Books</a>
+		</p>
+		<table>
+			<tr>
+				<th>Data da primeira publicação</th>
+				<th>Autor</th>
+				<th>Idioma Original</th>
+				<th>Gêneros</th>
+			</tr>
+			<tr>
+				<td>Novembro de 1865</td>
+				<td>Lewis Carrol</td>
+				<td>Inglês</td>
+				<td>Literatura infantil, Literatura fantástica, Literatura nonsense</td>
+			</tr>
+		</table>
+	</section>
+
+	<section>
+		<h3>O guia do Mochileiro das Galáxias	</h3>
+		<img src="img/galaxias.jpg">
+		<h3>Sinopse</h3>
+		<p>
+			Considerado um dos maiores clássicos da literatura de ficção científica, O Guia do Mochileiro das Galáxias vem encantando gerações de leitores ao redor do mundo com seu humor afiado.
+			Este é o primeiro título da famosa série escrita por Douglas Adams, que conta as aventuras espaciais do inglês Arthur Dent e de seu amigo Ford Prefect.
+			A dupla escapa da destruição da Terra pegando carona numa nave alienígena, graças aos conhecimentos de Prefect, um E.T. que vivia disfarçado de ator desempregado enquanto fazia pesquisa de campo para a nova edição do Guia do Mochileiro das Galáxias, o melhor guia de viagens interplanetário.
+			Mestre da sátira, Douglas Adams cria personagens inesquecíveis e situações mirabolantes para debochar da burocracia, dos políticos, da "alta cultura" e de diversas instituições atuais. Seu livro, que trata em última instância da busca do sentido da vida, não só diverte como também faz pensar.</p>
+		<p>
+			Fonte: <a href="https://www.google.com.br/books/edition/O_guia_do_mochileiro_das_gal%C3%A1xias/RhqJWjZ_6o4C?hl=pt-BR&gbpv=0" target="_black">Google Books</a>
+		</p>
+		<table>
+			<tr>
+				<th>Data da primeira publicação</th>
+				<th>Autor</th>
+				<th>Idioma Original</th>
+				<th>Gêneros</th>
+			</tr>
+			<tr>
+				<td>10 de novembro de 2010</td>
+				<td>J.K. Rowling</td>
+				<td>Douglas Adams</td>
+				<td>Romance, Literatura infantil, Literatura fantástica, Alta fantasia</td>
+			</tr>
+		</table>
+	</section>
+</body>
+</html>

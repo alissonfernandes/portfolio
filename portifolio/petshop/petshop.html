@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <title>PetShop</title>
+</head>
+
+<body>
+    <section class="container">
+        <form name="cadastrar" onsubmit="event.preventDefault()">
+            <div class="row">
+                <h1>Agendamento</h1>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <label for="nomePetId" class="form-label">Nome Pet</label>
+                    <input type="text" id="nomePetId" name="nomePet" class="form-control" required>
+                </div>
+                <div class="col-4 mt-5">
+                    <input type="radio" name="sexoPet" id="sexoMachoId" value="Macho" class="form-check-input" required>
+                    <label for="sexoMachoId" class="form-check-label">Macho</label>
+                    <input type="radio" name="sexoPet" id="sexoFemeaId" value="Fêmea" class="form-check-input">
+                    <label for="sexoFemeaId" class="form-check-label">Fêmea</label>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="racaPetId" class="form-label">Raça</label>
+                    <input type="text" id="racaPetId" name="raca" class="form-control" required>
+                </div>
+                <div class="col-3">
+                    <label for="idadePetId" class="form-label">Idade</label>
+                    <input type="number" class="form-control" name="idadePet" id="idadePetId" min="0" max="100" required>
+                </div>
+                <div class="col-3 mt-5 mb-2">
+                    <input type="radio" name="tipoPet" class="form-check-input" id="tipoCaninoId" value="Canino" required>
+                    <label for="tipoCaninoId" class="form-check-label">Canino</label>
+                    <input type="radio" name="tipoPet" id="tipoFelinoId" class="form-check-input" value="Felino">
+                    <label for="tipoFelinoId" class="form-check-label">Felino</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="nomeDonoId" class="form-label">Nome Dono</label>
+                    <input type="text" id="nomeDonoId" name="nomeDono" class="form-control" required>
+                </div>
+                <div class="col-3">
+                    <label for="emailId" class="form-label">E-mail</label>
+                    <input type="text" id="emailId" class="form-control" name="email" required>
+                </div>
+                <div class="col-3">
+                    <label for="whatsappId" class="form-label">Whatsapp</label>
+                    <input type="text" id="whatsappId" class="form-control" placeholder="(00) 12341234" name="whatsapp" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="enderecoId" class="form-label">Endereço</label>
+                    <input type="text" name="endereco" id="enderecoId" class="form-control"
+                        placeholder="Av. Afonso Pena, 320 - Centro" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container mt-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Serviço</th>
+                                        <th>Sim</th>
+                                        <th>Não</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th><label for="banhoId" class="form-check-label">Banho</label></th>
+                                        <th>
+                                            <input type="radio" name="banhoPet" id="banhoId" class="form-check-input"
+                                                value="1" required>
+                                        </th>
+                                        <th>
+                                            <input type="radio" name="banhoPet" id="banhoId" class="form-check-input"
+                                                value="0">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th><label for="hidratacaoId" class="form-check-label">Hidratação</label></th>
+                                        <th>
+                                            <input type="radio" name="hidratacaoPet" id="hidratacaoId"
+                                                class="form-check-input" value="1" required>
+                                        </th>
+                                        <th>
+                                            <input type="radio" name="hidratacaoPet" id="hidratacaoId"
+                                                class="form-check-input" value="0" required>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th><label for="desemboloId" class="form-check-label">Desembolo</label></th>
+                                        <th>
+                                            <input type="radio" name="desemboloPet" id="desemboloId"
+                                                class="form-check-input" value="1" required>
+                                        </th>
+                                        <th>
+                                            <input type="radio" name="desemboloPet" id="desemboloId"
+                                                class="form-check-input" value="0" required>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th><label for="tosaId" class="form-check-label">Tosa</label></th>
+                                        <th>
+                                            <input type="radio" name="tosaPet" id="tosaId" class="form-check-input"
+                                                value="1" required>
+                                        </th>
+                                        <th>
+                                            <input type="radio" name="tosaPet" id="tosaId" class="form-check-input"
+                                                value="0">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th><label for="maquinaId" class="form-check-label">Máquina</label></th>
+                                        <th>
+                                            <input type="radio" name="maquinaPet" id="maquinaId"
+                                                class="form-check-input" value="1" required>
+                                        </th>
+                                        <th>
+                                            <input type="radio" name="maquinaPet" id="maquinaId"
+                                                class="form-check-input" value="0">
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th><label for="tesouraId" class="form-check-label">Tesoura</label></th>
+                                        <th>
+                                            <input type="radio" name="tesouraPet" id="tesouraId"
+                                                class="form-check-input" value="1" required>
+                                        </th>
+                                        <th>
+                                            <input type="radio" name="tesouraPet" id="tesouraId"
+                                                class="form-check-input" value="0">
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-6">
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="dataId" class="form-label">Data</label>
+                                    <input type="date" name="data" id="DataId" class="form-control" required>
+                                </div>
+                                <div class="col-6">
+                                    <label for="horaId" class="form-label">Hora</label>
+                                    <input type="text" name="hora" id="horaId" class="form-control" placeholder="10:15" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="observacoesId" class="form-label">Observações</label>
+                                <textarea name="observacoes" id="observacoesId" cols="30" rows="3"
+                                    class="form-control"></textarea>
+                            </div>
+                            <div class="row">
+                                <button type="submit" class="btn mt-5" onclick="adicionarNaLista()">Agendar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <div class="container mt-5 mb-5">
+        <hr>
+    </div>
+    <section class="container">
+        <div class="row">
+            <h1>Agenda</h1>
+        </div>
+        <div class="row">
+            <table class="table  table-striped">
+                <thead>
+                    <tr>
+                        <th>Data e hora</th>
+                        <th>Serviços</th>
+                        <th>Observações</th>
+                        <th>Identificação do Animal</th>
+                        <th>Identificação do dono</th>
+                    </tr>
+                </thead>
+                <tbody id="bodyTable">
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

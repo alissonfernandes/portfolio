@@ -1,0 +1,42 @@
+:root {
+    --violeta: rgb(153, 50, 204);
+    --white: rgb(245, 245, 245);
+}
+
+body{
+    color: var(--violeta);
+    background-color: var(--white);
+}
+
+.form-label, .form-check-label{
+    color: var(--violeta);
+}
+.form-control, .form-check-input {
+    border-color: var(--violeta);
+    color: var(--violeta);
+}
+input[type=text]:placeholder-shown {
+    color: var(--violeta);
+}
+input[type=text]:focus {
+    box-shadow: 0 0 8px 0  rgb(153, 50, 204);
+}
+
+thead{
+    color: var(--violeta);
+}
+
+.btn{
+    background-color: var(--violeta);
+    color: var(--white);
+}
+
+.btn:hover {
+    background-color: var(--violeta);
+    box-shadow: 0 0 8px rgba(238, 130, 238, 0.781);
+    color: aliceblue;
+}
+
+table tr {
+    font-size: 11pt;
+}
